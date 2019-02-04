@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FC BATYS Official Website</title>
+
+    <link rel="stylesheet" href="tablestyle.css">
+    <script type="text/javascript">
+        function digitalWatch() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            var d = new Date();
+            var day = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds + "<br />" + day + "/" + month + "/" + year;
+            setTimeout("digitalWatch()", 1000);
+        }
+    </script>
+    <script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body onload="digitalWatch(); starttimer();">
+    <a href="index.html">
+        <div class="h-transition">
+            <div class="anim" id="left"></div>
+            <div id="logo">
+                <img src="pic/logo.png" width="50px" height="80px" />
+                <h1>FC BATYS</h1>
+            </div>
+            <div class="anim" id="right"></div>
+        </div>
+    </a>
+    <div id="topnav">
+        <div id="follow">FOLLOW FC BATYS</div>
+        <nav>
+            <div id="social">
+                <a class="soc" href="https://www.facebook.com/syrim99?ref=bookmarks" target="_blank">
+                    <img src="https://www.freeiconspng.com/uploads/white-facebook-fb-icon-17.png" alt="Face" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://twitter.com/syrim_99" target="_blank">
+                    <img src="https://www.schalker-gymnasium.de/img/twitter.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.instagram.com/whistle_afa/" target="_blank">
+                    <img src="http://alm.ch/img/instagram.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.youtube.com/channel/UCQXAI_asVi-Q_yuQBf73lHg" target="_blank">
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/youtube-logo-png-white-1.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://vk.com/syrim_99" target="_blank">
+                    <img src="https://www.stadlerrail.com/static/img/vk_com.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <ul class="men">
+        <li>
+            <a href="Main.html">
+                Club
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="players.html">
+                Players
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Table.html">
+                Standings
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="shop.html">
+                Shop
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="videos.html">
+                Videos
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Converter.html">
+                Converter
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+    <hr id="hr1" width="100%" />
+    <div class="tab" data-type="all">
+            <table class="tabl">
+                <thead>
+                    <tr>
+                        <th class="result-table__zone _num _right _no-extra-padding">№</th>
+                        <th class="result-table__item">Team</th>
+                        <th class="result-table__games _center">G<span class="_hidden-dt">ames</span></th>
+                        <th class="_center _hidden-td">W</th>
+
+
+                        <th class="_center _hidden-td">D</th>
+
+
+                        <th class="_center _hidden-td">L</th>
+
+
+                        <th class="_center _hidden-td">
+                            Goals
+                        </th>
+                        <th class="result-table__points _center">P<span class="_hidden-dt">oints</span></th>
+
+                        <th class=" _center _hidden-td">% of points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="gr">
+                        <td class="result-table__zone _up1 _num _right _no-extra-padding">
+                            1
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="pic/logo.png" width="40px" style="margin-left: 11px">
+                            </span>
+                            <span class="table-item__name" style="margin-left: 10px">FC Batys</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>24</strong></td>
+
+                        <td class="_center _hidden-td">19</td>
+
+
+                        <td class="_center _hidden-td">4</td>
+
+
+                        <td class="_center _hidden-td">1</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>55</span><span>-</span><span>14</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>61</strong></td>
+                        <td class="_center _hidden-td">84,7</td>
+                    </tr>
+                    <tr class="gr">
+                        <td class="result-table__zone _up1 _num _right _no-extra-padding">
+                            2
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/1469055821916222532.png">
+                            </span>
+                            <span class="table-item__name">Manchester City</span>
+
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">19</td>
+
+
+                        <td class="_center _hidden-td">2</td>
+
+
+                        <td class="_center _hidden-td">4</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>66</span><span>-</span><span>20</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>59</strong></td>
+
+
+                        <td class="_center _hidden-td">78,7</td>
+
+                    </tr>
+                    <tr class="gr">
+                        <td class="result-table__zone _up1 _num _right _no-extra-padding">
+                            3
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658316581098338948.png">
+                            </span>
+                            <span class="table-item__name">Spurs</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">19</td>
+
+
+                        <td class="_center _hidden-td">0</td>
+
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>51</span><span>-</span><span>24</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>57</strong></td>
+
+
+                        <td class="_center _hidden-td">76,0</td>
+
+                    </tr>
+                    <tr class="gr">
+                        <td class="result-table__zone _up1 _num _right _no-extra-padding">
+                            4
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658314551368579346.png">
+                            </span>
+                            <span class="table-item__name">Chelsea</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">15</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>45</span><span>-</span><span>23</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>50</strong></td>
+
+
+                        <td class="_center _hidden-td">66,7</td>
+
+
+                    </tr>
+                    <tr class="y">
+                        <td class="result-table__zone _up2 _num _right _no-extra-padding">
+                            5
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658325251734697001.png">
+                            </span>
+                            <span class="table-item__name">Manchester United</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">14</td>
+
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>49</span><span>-</span><span>35</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>48</strong></td>
+
+
+                        <td class="_center _hidden-td">64,0</td>
+
+
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _0 _num _right _no-extra-padding">
+                            6
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/1465832935255919291.png">
+                            </span>
+                            <span class="table-item__name">Arsenal</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">14</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>51</span><span>-</span><span>36</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>47</strong></td>
+
+
+                        <td class="_center _hidden-td">62,7</td>
+
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _1 _num _right _no-extra-padding">
+                            7
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/1469487878432998206.png">
+                            </span>
+                            <span class="table-item__name">Wolves</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">11</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">9</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>33</span><span>-</span><span>32</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>38</strong></td>
+
+
+                        <td class="_center _hidden-td">50,7</td>
+
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _0 _num _right _no-extra-padding">
+                            8
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658315211076255213.png">
+                            </span>
+                            <span class="table-item__name">Watford</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">9</td>
+
+
+                        <td class="_center _hidden-td">7</td>
+
+
+                        <td class="_center _hidden-td">9</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>33</span><span>-</span><span>34</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>34</strong></td>
+
+
+                        <td class="_center _hidden-td">45,3</td>
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _1 _num _right _no-extra-padding">
+                            9
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/1465755316563300807.png">
+                            </span>
+                            <span class="table-item__name">Everton</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">9</td>
+
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">10</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>36</span><span>-</span><span>36</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>33</strong></td>
+
+
+                        <td class="_center _hidden-td">44,0</td>
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _0 _num _right _no-extra-padding">
+                            10
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658328311228689571.png">
+                            </span>
+                            <span class="table-item__name">Bournmuth</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">10</td>
+
+
+                        <td class="_center _hidden-td">3</td>
+
+
+                        <td class="_center _hidden-td">12</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>37</span><span>-</span><span>44</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>33</strong></td>
+
+
+                        <td class="_center _hidden-td">44,0</td>
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _1 _num _right _no-extra-padding">
+                            11
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658326571808281562.png">
+                            </span>
+                            <span class="table-item__name">Leicester</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">9</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">11</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>30</span><span>-</span><span>31</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>32</strong></td>
+
+
+                        <td class="_center _hidden-td">42,7</td>
+
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _0 _num _right _no-extra-padding">
+                            12
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14691953971590009599.png">
+                            </span>
+                            <span class="table-item__name">West Ham</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>24</strong></td>
+
+                        <td class="_center _hidden-td">9</td>
+
+
+                        <td class="_center _hidden-td">4</td>
+
+
+                        <td class="_center _hidden-td">11</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>30</span><span>-</span><span>37</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>31</strong></td>
+
+
+                        <td class="_center _hidden-td">43,1</td>
+                    </tr>
+                    <tr class="w">
+                        <td class="result-table__zone _1 _num _right _no-extra-padding">
+                            13
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14694863921668483594.png">
+                            </span>
+                            <span class="table-item__name">Brayton</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">7</td>
+
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">12</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>27</span><span>-</span><span>36</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>27</strong></td>
+
+
+                        <td class="_center _hidden-td">36,0</td>
+
+                    </tr>
+                    <tr class="r">
+                        <td class="result-table__zone _0 _num _right _no-extra-padding">
+                            14
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658327001948562049.png">
+                            </span>
+                            <span class="table-item__name">Crystal Palace</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">7</td>
+
+
+                        <td class="_center _hidden-td">5</td>
+
+
+                        <td class="_center _hidden-td">13</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>26</span><span>-</span><span>33</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>26</strong></td>
+
+
+                        <td class="_center _hidden-td">34,7</td>
+                    </tr>
+                    <tr class="r">
+                        <td class="result-table__zone _1 _num _right _no-extra-padding">
+                            15
+                        </td>
+                        <td class="result-table__item">
+                            <span class="table-item__logo">
+                                <img src="https://img.championat.com/s/60x60/team/logo/14658319671198636026.png">
+                            </span>
+                            <span class="table-item__name">Newcastle United</span>
+                        </td>
+
+                        <td class="result-table__games _center"><strong>25</strong></td>
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">6</td>
+
+
+                        <td class="_center _hidden-td">13</td>
+
+
+                        <td class="_center _hidden-td">
+                            <span>21</span><span>-</span><span>33</span>
+                        </td>
+                        <td class="result-table__points _center"><strong>24</strong></td>
+
+
+                        <td class="_center _hidden-td">32,0</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <footer style="position: absolute;
+    left: 5%;
+    top: 1460px;">
+        <img src="pic/pole2.jpg" width="100%" height="100% " />
+        <div class="footer">
+            <h1 id="inf" style="width: 30%">Contact me:</h1>
+            <p id="info">
+                Syrym Berdaliyev <br />
+                Meirambekovich<br />
+                EX040<br />
+                syrim99@gmail.com<br />
+                DS3
+            </p>
+        </div>
+        <div class="footer"><h1 id="act" style="width: 35%">Actual time:</h1><p id="clock"></p></div>
+        <div class="footer">
+            <h1 id="tim" style="width: 35%">Time spent in the best WebSite:</h1>
+            <br /><input type="text" id="myTimer"></input>
+        </div>
+    </footer>
+    <a href="#" title="Up" class="topbutton"><img src="pic/white-down-arrow-png-2.png" width="40px" height="45px" /></a>
+</body>
+</html>

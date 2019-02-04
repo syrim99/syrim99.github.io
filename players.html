@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FC BATYS Official Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script type="text/javascript">
+        function digitalWatch() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            var d = new Date();
+            var day = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds + "<br />" + day + "/" + month + "/" + year;
+            setTimeout("digitalWatch()", 1000);
+        }
+    </script>
+    <script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body onload="digitalWatch(); starttimer();">
+    <a href="index.html">
+        <div class="h-transition">
+            <div class="anim" id="left"></div>
+            <div id="logo">
+                <img src="pic/logo.png" width="50px" height="80px" />
+                <h1>FC BATYS</h1>
+            </div>
+            <div class="anim" id="right"></div>
+        </div>
+    </a>
+    <div id="topnav">
+        <div id="follow">FOLLOW FC BATYS</div>
+        <nav>
+            <div id="social">
+                <a class="soc" href="https://www.facebook.com/syrim99?ref=bookmarks" target="_blank">
+                    <img src="https://www.freeiconspng.com/uploads/white-facebook-fb-icon-17.png" alt="Face" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://twitter.com/syrim_99" target="_blank">
+                    <img src="https://www.schalker-gymnasium.de/img/twitter.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.instagram.com/whistle_afa/" target="_blank">
+                    <img src="http://alm.ch/img/instagram.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.youtube.com/channel/UCQXAI_asVi-Q_yuQBf73lHg" target="_blank">
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/youtube-logo-png-white-1.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://vk.com/syrim_99" target="_blank">
+                    <img src="https://www.stadlerrail.com/static/img/vk_com.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <ul class="men">
+        <li>
+            <a href="Main.html">
+                Club
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="players.html">
+                Players
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Table.html">
+                Standings
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="shop.html">
+                Shop
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="videos.html">
+                Videos
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Converter.html">
+                Converter
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+    <hr id="hr1" width="100%" />
+    <div class="container" style="position: absolute; top:103px; height:700px; left:5%; width:90%">
+        <div>
+            <div style="text-align:center; clear:both; font-size:1.5em; margin-top:10px; margin-bottom:10px; color:white;">
+                Goalkeepers
+            </div>
+            <div id="row" style="width:100%; text-align:center; clear:both;">
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Zhandos Naimanbayev<br />
+                    <img src="pic/Jando.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Marat Zhaksylykov<br />
+                    <img src="pic/Mara.jpg" style="width:200px; height:150px;" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="text-align:center; clear:both; font-size:1.5em; margin-top:10px; margin-bottom:10px; color:white;">
+                Defenders
+            </div>
+            <div class="row" style="width:100%; text-align:center; clear:both;">
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Yesengeldi Samarbayev<br />
+                    <img src="pic/Esya.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Bagzhan Kabdygaliyev<br />
+                    <img src="https://pp.userapi.com/c639424/v639424673/326d0/c1n5NQPCNys.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Miras Shamshidenov<br />
+                    <img src="https://pp.userapi.com/c845120/v845120215/145ba1/_OITcG2MVHY.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Abzal Urazbayev<br />
+                    <img src="https://pp.userapi.com/c845420/v845420743/18ad4b/vJSF2P3PmiQ.jpg" style="width:200px; height:150px;" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <div style="text-align:center; clear:both; font-size:1.5em; margin-top:10px; margin-bottom:10px; color:white;">
+                Forwards
+            </div>
+            <div class="row" style="width:100%; text-align:center; clear:both;">
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Nurbolat Abuyev<br />
+                    <img src="https://pp.userapi.com/c830708/v830708172/195303/ddRr-e_VKuY.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Mergen Kulikesh<br />
+                    <img src="https://pp.userapi.com/c621703/v621703658/4433/xiLS80FlV98.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Islam Karazhanov<br />
+                    <img src="https://pp.userapi.com/c841136/v841136777/56a08/TgzB-RMadKg.jpg" style="width:200px; height:150px;" />
+                </div>
+                <div class="column" style="width:25%; float:left; color:white;">
+                    Arman Kaparov<br />
+                    <img src="https://pp.userapi.com/c845522/v845522037/92a37/KZTxIq_-RmI.jpg" style="width:200px; height:150px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="   position: absolute;
+    left: 5%;
+    top: 800px;">
+        <img src="pic/pole2.jpg" width="100%" height="100% " />
+        <div class="footer">
+            <h1 id="inf" style="width: 30%">Contact me:</h1>
+            <p id="info">
+                Syrym Berdaliyev <br />
+                Meirambekovich<br />
+                EX040<br />
+                syrim99@gmail.com<br />
+                DS3
+            </p>
+        </div>
+        <div class="footer"><h1 id="act" style="width: 35%">Actual time:</h1><p id="clock"></p></div>
+        <div class="footer">
+            <h1 id="tim" style="width: 35%">Time spent in the best WebSite:</h1>
+            <br /><input type="text" id="myTimer"></input>
+        </div>
+    </footer>
+    <a href="#" title="Up" class="topbutton"><img src="pic/white-down-arrow-png-2.png" width="40px" height="45px" /></a>
+</body>
+</html>

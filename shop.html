@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FC BATYS Official Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script type="text/javascript">
+        function digitalWatch() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            var d = new Date();
+            var day = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds + "<br />" + day + "/" + month + "/" + year;
+            setTimeout("digitalWatch()", 1000);
+        }
+    </script>
+    <script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body onload="digitalWatch(); starttimer();">
+    <a href="index.html">
+        <div class="h-transition">
+            <div class="anim" id="left"></div>
+            <div id="logo">
+                <img src="pic/logo.png" width="50px" height="80px" />
+                <h1>FC BATYS</h1>
+            </div>
+            <div class="anim" id="right"></div>
+        </div>
+    </a>
+    <div id="topnav">
+        <div id="follow">FOLLOW FC BATYS</div>
+        <nav>
+            <div id="social">
+                <a class="soc" href="https://www.facebook.com/syrim99?ref=bookmarks" target="_blank">
+                    <img src="https://www.freeiconspng.com/uploads/white-facebook-fb-icon-17.png" alt="Face" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://twitter.com/syrim_99" target="_blank">
+                    <img src="https://www.schalker-gymnasium.de/img/twitter.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.instagram.com/whistle_afa/" target="_blank">
+                    <img src="http://alm.ch/img/instagram.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.youtube.com/channel/UCQXAI_asVi-Q_yuQBf73lHg" target="_blank">
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/youtube-logo-png-white-1.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://vk.com/syrim_99" target="_blank">
+                    <img src="https://www.stadlerrail.com/static/img/vk_com.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <ul class="men">
+        <li>
+            <a href="Main.html">
+                Club
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="players.html">
+                Players
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Table.html">
+                Standings
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="shop.html">
+                Shop
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="videos.html">
+                Videos
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Converter.html">
+                Converter
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+    <hr id="hr1" width="100%" />
+
+    <div class="container" style="position: absolute; top:103px;">
+        <div style="clear:both;">
+            <div style="width:50%; color:white; font-size:2em; text-align:center; margin-top:30px; float:left;">
+                <img src="pic/up1.png" style="width:50%; display:block; margin:0 auto;" />
+                T-shirt<br />1000zl
+            </div>
+            <div style="width:50%;  color:white; font-size:2em; text-align:center; margin-top:30px; float:left;">
+                <img src="pic/Shorts.png" style="width:50%; display:block; margin:0 auto;" />
+                Shorts<br />500zl
+            </div>
+        </div>
+        <div style="background-color:white; position:absolute; top:500px; left: 5%; width:90%; height:500px;">
+            <form method="POST" action="http://formspree.io/syrim99@gmail.com">
+                <div style="padding:30px; ">
+                    <div style="text-align:left; padding-bottom:10px; border-bottom:2px solid rgb(85, 26, 139); color:rgb(85, 26, 139); font-size:3em;">
+                        Order now
+                    </div>
+                    <div style="width:50%; float:left; margin-top:10px;">
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Name*<br />
+                            <input type="text" name="name" required="" class="form-control1" id="name" placeholder="Name" style="border-style:
+                                    solid;font-family: 'Pattaya', sans-serif;  border-color:rgb(85, 26, 139); text-align: left;
+                                     font-size: 15px; padding: 7px 17px">
+                        </div>
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Surname*<br />
+                            <input type="text" name="surname" required="" class="form-control1" id="surname" placeholder="Surname" style="
+                                    border-style: solid;  border-color: rgb(85, 26, 139); text-align: left;font-family: 'Pattaya', sans-serif;
+                                     font-size: 15px; padding: 7px 17px;">
+                        </div>
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Email*<br />
+                            <input type="email" name="email" required="" class="form-control1" id="email" placeholder="Email" style="
+                                    border-style: solid;  border-color: rgb(85, 26, 139); text-align: left;font-family: 'Pattaya', sans-serif;
+                                     font-size: 15px; padding: 7px 17px;">
+                        </div>
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Phone number*<br />
+                            <input type="tel" name="tel" required="" maxlength="12" class="form-control1" id="child" placeholder="Phone number" style="
+                                    border-style: solid;  border-color:rgb(85, 26, 139); text-align: left;font-family: 'Pattaya', sans-serif;
+                                     font-size: 15px; padding: 7px 17px;">
+                        </div>
+                    </div>
+                    <div style="width:50%; float:left; align-items:center; margin-top:10px;">
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Size*<br />
+                            <input type="text" name="size" required="" class="form-control1" id="size" placeholder="Size" style="
+                                    border-style: solid;  border-color: rgb(85, 26, 139); text-align: left;font-family: 'Pattaya', sans-serif;
+                                     font-size: 15px; padding: 7px 17px;">
+                        </div>
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Name on shirt:<br />
+                            <input type="text" name="nameonshirt" required="" maxlength="20" class="form-control1" id="nameonshirt" placeholder="Name on shirt" style="
+                                    border-style: solid;  border-color: rgb(85, 26, 139); text-align: left;font-family: 'Pattaya', sans-serif;
+                                     font-size: 15px; padding: 7px 17px;">
+                        </div>
+                        <div style="color:rgb(85, 26, 139);margin-top:10px; font-size:1.5em;">
+                            Number on shirt:<br />
+                            <input type="number" name="numberonshirt" required="" maxlength="3" class="form-control1" id="numberonshirt" placeholder="Number on shirt" style="
+                                    border-style: solid;  border-color: rgb(85, 26, 139); text-align: left;font-family: 'Pattaya', sans-serif;
+                                     font-size: 15px; padding: 7px 17px;">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer" style="width:90%;   clear:both; padding:30px;">
+
+                    <button type="submit" style="font-size: 40px; color:rgb(85, 26, 139); font-weight: bold; background-color: white; border: 2px solid rgb(85, 26, 139);" class="btn btn-default">Order</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+            
+        
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="indexs.js"></script>
+    <footer style="position: absolute;
+    left: 5%;
+    top: 1120px;">
+        <img src="pic/pole2.jpg" width="100%" height="100% " />
+        <div class="footer">
+            <h1 id="inf" style="width: 30%">Contact me:</h1>
+            <p id="info">
+                Syrym Berdaliyev <br />
+                Meirambekovich<br />
+                EX040<br />
+                syrim99@gmail.com<br />
+                DS3
+            </p>
+        </div>
+        <div class="footer"><h1 id="act" style="width: 35%">Actual time:</h1><p id="clock"></p></div>
+        <div class="footer">
+            <h1 id="tim" style="width: 35%">Time spent in the best WebSite:</h1>
+            <br /><input type="text" id="myTimer"></input>
+        </div>
+    </footer>
+    <a href="#" title="Up" class="topbutton"><img src="pic/white-down-arrow-png-2.png" width="40px" height="45px" /></a>
+</body>
+</html>

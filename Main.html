@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FC BATYS Official Website</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="text/javascript">
+        function digitalWatch() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            var d = new Date();
+            var day = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds + "<br />" + day + "/" + month + "/" + year;
+            setTimeout("digitalWatch()", 1000);
+        }
+    </script>
+    <script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body onload="digitalWatch(); starttimer();">
+    <a href="index.html">
+        <div class="h-transition">
+            <div class="anim" id="left"></div>
+            <div id="logo">
+                <img src="pic/logo.png" width="50px" height="80px" />
+                <h1>FC BATYS</h1>
+            </div>
+            <div class="anim" id="right"></div>
+        </div>
+    </a>
+    <div id="topnav">
+        <div id="follow">FOLLOW FC BATYS</div>
+        <nav>
+            <div id="social">
+                <a class="soc" href="https://www.facebook.com/syrim99?ref=bookmarks" target="_blank">
+                    <img src="https://www.freeiconspng.com/uploads/white-facebook-fb-icon-17.png" alt="Face" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://twitter.com/syrim_99" target="_blank">
+                    <img src="https://www.schalker-gymnasium.de/img/twitter.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.instagram.com/whistle_afa/" target="_blank">
+                    <img src="http://alm.ch/img/instagram.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.youtube.com/channel/UCQXAI_asVi-Q_yuQBf73lHg" target="_blank">
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/youtube-logo-png-white-1.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://vk.com/syrim_99" target="_blank">
+                    <img src="https://www.stadlerrail.com/static/img/vk_com.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <ul class="men">
+        <li>
+            <a href="Main.html">
+                Club
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="players.html">
+                Players
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Table.html">
+                Standings
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="shop.html">
+                Shop
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="videos.html">
+                Videos
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Converter.html">
+                Converter
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+    <hr id="hr1" width="100%" />
+    <div class="container">
+        <section id="fancyTabWidget" class="tabs t-tabs">
+            <ul class="nav nav-tabs fancyTabs" role="tablist">
+
+                <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                    <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span class="hidden-xs">History</span></a>
+                    <div class="whiteBlock"></div>
+                </li>
+
+                <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                    <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-firefox"></span><span class="hidden-xs">Trophies</span></a>
+                    <div class="whiteBlock"></div>
+                </li>
+
+                <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                    <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-envira"></span><span class="hidden-xs">Photos</span></a>
+                    <div class="whiteBlock"></div>
+                </li>
+                                
+            </ul>
+            <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                    <div>
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>The club was created in 2016. At first, the club was named after Berdaliev Syrym as "West United", but then a year later it was renamed "FC BATYS". In the same year, he took the honorable 5th place in the university league and won the Kabdygaliyev Bagzhan Cup. And in the following season, he was headed by Merey Mukhtar and is currently at the top of the standings in the AFA league.</p>
+                                <img src="pic/obw2.jpg" width="100%" height="50%" style="align-self:center;" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <p>
+                                The club has won three dorm cups. Six Cups "Pinta Bar". FC Batys won their first trophy in 2016 when they won the Copa Macaca, which was the predecessor to the Aksay Championship. The club won the Aksay Championship a record 2 times during the 2-year span of the tournament.
+                                When AUPET league was established in 2017, the importance of the regional league declined, and it was abandoned in 2017. From then on, Batys did not participate in regional competitions until the establishment of the Copa Catalunya in 2017, a cup they have won a record 2 times.
+                                They are the most successful club in AUPET, having won a total of 73 domestic titles: 25 Obwaga Cup, a record 30 Pint Bar Cup, a record 13 Supercopa de AUPET, a record three Copa Aidynbek and a record two Copa de Mara.
+                                The club is also one of the most successful clubs in international club football, having won 22 official trophies in total, 14 of which are UEFA competitions and 8 approved by FIFA. They have two Kazakh Cup, five UEFA Champions League titles, a record five UEFA Super Cup, a record four UEFA Cup Winners' Cups, and three FIFA Club World Cup trophies.
+                            </p>
+                            <img src="https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/04/22/Pictures/spain-soccer-copa-del-rey_3df8436e-45d9-11e8-873d-4d6fb1883171.jpg" width="100%" height="50%" style="align-self:center;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12" style="align-items:center; text-align:center">
+                            <h2>The Moments from matches and life of our players.</h2>
+                            <img src="pic/MyCollages.jpg" style="display:block; margin: 0 auto;" width="81%" height="50%" style="align-self:center;" />
+                        </div>
+                    </div>
+                </div>
+                                
+        </div>
+
+        </section>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="indexs.js"></script>
+    <footer style="position: absolute;
+    left: 5%;
+    top: 1300px;">
+        <img src="pic/pole2.jpg" width="100%" height="100% " />
+        <div class="footer">
+            <h1 id="inf" style="width: 30%">Contact me:</h1>
+            <p id="info">
+                Syrym Berdaliyev <br />
+                Meirambekovich<br />
+                EX040<br />
+                syrim99@gmail.com<br />
+                DS3
+            </p>
+        </div>
+        <div class="footer"><h1 id="act" style="width: 35%">Actual time:</h1><p id="clock"></p></div>
+        <div class="footer">
+            <h1 id="tim" style="width: 35%">Time spent in the best WebSite:</h1>
+            <br /><input type="text" id="myTimer"></input>
+        </div>
+    </footer>
+    <a href="#" title="Up" class="topbutton"><img src="pic/white-down-arrow-png-2.png" width="40px" height="45px" /></a>
+</body>
+</html>

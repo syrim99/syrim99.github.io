@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FC BATYS Official Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script type="text/javascript">
+        function digitalWatch() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            if (hours < 10) hours = "0" + hours;
+            if (minutes < 10) minutes = "0" + minutes;
+            if (seconds < 10) seconds = "0" + seconds;
+            var d = new Date();
+            var day = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds + "<br />" + day + "/" + month + "/" + year;
+            setTimeout("digitalWatch()", 1000);
+        }
+    </script>
+    <script type="text/javascript" src="timer.js"></script>
+    <script type="text/javascript" language="Javascript">
+        alert("Welcome! This is WebSite of my football team, which I play in university.")
+    </script>
+</head>
+
+<body onload="digitalWatch(); starttimer();">
+    <a href="index.html">
+        <div class="h-transition">
+            <div class="anim" id="left"></div>
+            <div id="logo">
+                <img src="pic/logo.png" width="50px" height="80px" />
+                <h1>FC BATYS</h1>
+            </div>
+            <div class="anim" id="right"></div>
+        </div>
+    </a>
+    <div id="topnav">
+        <div id="follow">FOLLOW FC BATYS</div>
+        <nav>
+            <div id="social">
+                <a class="soc" href="https://www.facebook.com/syrim99?ref=bookmarks" target="_blank">
+                    <img src="https://www.freeiconspng.com/uploads/white-facebook-fb-icon-17.png" alt="Face" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://twitter.com/syrim_99" target="_blank">
+                    <img src="https://www.schalker-gymnasium.de/img/twitter.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.instagram.com/whistle_afa/" target="_blank">
+                    <img src="http://alm.ch/img/instagram.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://www.youtube.com/channel/UCQXAI_asVi-Q_yuQBf73lHg" target="_blank">
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/youtube-logo-png-white-1.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+                <a class="soc" href="https://vk.com/syrim_99" target="_blank">
+                    <img src="https://www.stadlerrail.com/static/img/vk_com.png" alt="Twit" width="30px" height="30px" border="0">
+                </a>
+            </div>
+        </nav>
+    </div>
+    <ul class="men">
+        <li>
+            <a href="Main.html">
+                Club
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="players.html">
+                Players
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Table.html">
+                Standings
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="shop.html">
+                Shop
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="videos.html">
+                Videos
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="Converter.html">
+                Converter
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </li>
+    </ul>
+    <hr id="hr1" width="100%" />
+    <!-- Apparently using @import messes with the JavaScript, so I am linking the font here -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <div class="panels">
+        <div class="panel panel1">
+            <p class="shap">5 "Kuka" Kudaibergen's records that CriRo may never break</p>
+            <img src="pic/kuka222.jpg">
+            <p>
+                #1 Most goals scored in a calendar year (91 goal).<br />
+                #2 Scoring 60+ goals in all competitions in consecutive seasons.<br />
+                #3 Most assists in ZHEl Clasiko.<br />
+                #4 Winning four Golden BOY AUPET in a row.<br />
+                #5 50 goals in a single league season
+            </p>
+        </div>
+        <div class="panel panel2">
+            <p class="shap">BREAKING! Batys agree world record £81.5m fee to sign Union FC goalkeeper Naimanbayev Zhandos!</p>
+            <img src="pic/Jando.jpg">
+            <p>
+                The 20-year-old Naimanbayev "Jando" Zhandos Kazakh replaces Zhaksylykov Marat, who wanted move to La Liga giants Real Madrid.
+                “It’s a very important decision for me, for my career, and also for my personal life,” Jando said after arriving at AUPET Stadium.
+            </p>
+        </div>
+        <div class="panel panel3">
+            <p class="shap">BREAKING!! Yesengeldi with a right calf injury!</p>
+            <img src="pic/Esya2.jpg">
+            <p>
+                In training on Friday the first team player Yesengeldi "YESYA" Samarbayev tore a muscle in his right calf. The defender is expected to be out for about a year.
+            </p>
+        </div>
+        <div class="panel panel4">
+            <p class="shap">Urazbayev "Machinka" Abzal signs for FC Batys from Union!</p>
+            <img src="pic/Abzi4.jpg">
+            <p>
+                Abzal has completed his world-record transfer to FC Batys from Union for £200m.
+                Union confirmed payment for Abzal's 222m euros buyout clause had been received earlier on Thursday,
+                despite the transfer hitting a stumbling block when AFL refused to accept the release clause.
+            </p>
+        </div>
+        <div class="panel panel5">
+            <p class="shap">Return to training!</p>
+            <img src="pic/obw1.jpg">
+            <p>
+                The second training session of the week came after Kabdygaliyev "Baha" Bagzhan had given the squad two days rest.
+                This Thursday, the first team players, including Danabek, Yernur and Aidynbek, worked out in a morning
+                session on Pitch 2 of the AUPET. Marat and El'dar of Batys B made up the numbers.
+            </p>
+        </div>
+    </div>
+    <script src="new.js"></script>
+    <hr id="hr2" width="100%" />
+    <footer style="   position: absolute;
+    left: 5%;
+    top: 763px;">
+        <img src="pic/pole2.jpg" width="100%" height="100% " />
+        <div class="footer">
+            <h1 id="inf" style="width: 30%">Contact me:</h1>
+            <p id="info">
+                Syrym Berdaliyev <br />
+                Meirambekovich<br />
+                EX040<br />
+                syrim99@gmail.com<br />
+                DS3
+            </p>
+        </div>
+        <div class="footer"><h1 id="act" style="width: 35%">Actual time:</h1><p id="clock"></p></div>
+        <div class="footer">
+            <h1 id="tim" style="width: 35%">Time spent in the best WebSite:</h1>
+            <br /><input type="text" id="myTimer"></input>
+        </div>
+    </footer>
+    <a href="#" title="Up" class="topbutton"><img src="pic/white-down-arrow-png-2.png" width="40px" height="45px" /></a>
+</body>
+</html>
